@@ -1,50 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/style.css" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
+    <link rel="stylesheet" href="./dist/style.css"/>
     <title>Document</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="item2">
-        <img src="/images/slider-image-1.jpg" alt="slider-image-1" />
-        <img src="/images/slider-image-2.jpg" alt="slider-image-2" />
-        <img src="/images/slider-image-3.jpg" alt="slider-image-3" />
-        <img src="/images/slider-image-4.jpg" alt="slider-image-4" />
-        <img src="/images/slider-image-5.jpg" alt="slider-image-5" />
-        <img src="/images/slider-image-6.jpg" alt="slider-image-6" />
-        <img src="/images/slider-image-7.jpg" alt="slider-image-7" />
-        <img src="/images/slider-image-8.jpg" alt="slider-image-7" />
-        <img src="/images/slider-image-9.jpg" alt="slider-image-7" />
-      </div>
-      <div class="item3">
-        <h1>Lorem ipsum dolor sit.</h1>
-        <div class="text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam
-          deserunt quis laboriosam neque libero error exercitationem aliquid aut
-          eaque ipsa molestias ut ducimus excepturi consequatur repudiandae at,
-          cumque perferendis dignissimos sunt quasi possimus quisquam ab!
-          Dolores sit ullam unde excepturi nemo quos at deleniti officiis
-          voluptate. Iure, quod fugit, tempore dolor eius iste eligendi nemo ad
-          ex quisquam odit necessitatibus.
-        </div>
-      </div>
-      <div class="item4">
-        <img
-          class="button-right"
-          src="/images/arrow-gray-right.png"
-          alt="arrow-gray-right"
-        />
+</head>
+<body>
 
-        <img
-          class="button-left"
-          src="/images/arrow-gray-left.png"
-          alt="arrow-gray-left"
-        />
-      </div>
+<div class="container">
+    <div class="header">
+        <div class="header-content" id="header1">
+
+        </div>
+        <div class="header-content" id="header2">
+            <p>Skup drugih elemenata na stranici</p>
+        </div>
     </div>
-  </body>
+    
+
+    <div class="content">
+        <div class="gallery-part">
+            <div class="slider">
+                <img class="image-item" src="./images/slider-image-1.jpg" alt="slider-image-1"/>
+                <img class="image-item" src="./images/slider-image-2.jpg" alt="slider-image-2"/>
+                <img class="image-item" src="./images/slider-image-3.jpg" alt="slider-image-3"/>
+                <img class="image-item" src="./images/slider-image-4.jpg" alt="slider-image-4"/>
+                <img class="image-item" src="./images/slider-image-5.jpg" alt="slider-image-5"/>
+                <img class="image-item" src="./images/slider-image-6.jpg" alt="slider-image-6"/>
+                <img class="image-item" src="./images/slider-image-7.jpg" alt="slider-image-7"/>
+                <img class="image-item" src="./images/slider-image-8.jpg" alt="slider-image-8"/>
+                <img class="image-item" src="./images/slider-image-9.jpg" alt="slider-image-9"/>
+            </div>
+
+            <div class="second-row">
+                <div class="slider">
+                    <img class="image-item" src="./images/slider-image-7.jpg" alt="slider-image-7"/>
+                    <img class="image-item" src="./images/slider-image-8.jpg" alt="slider-image-8"/>
+                    <img class="image-item" src="./images/slider-image-9.jpg" alt="slider-image-9"/>
+                    <img class="image-item" src="./images/slider-image-1.jpg" alt="slider-image-1"/>
+                    <img class="image-item" src="./images/slider-image-5.jpg" alt="slider-image-5"/>
+                    <img class="image-item" src="./images/slider-image-6.jpg" alt="slider-image-6"/>
+                </div>
+
+                <div class="navigation-buttons">
+                    <button id="left-button">
+                        <img src="./images/arrow-gray-left.png"
+                             alt="arrow-gray-left"
+                        />
+                    </button>
+                    <button id="right-button">
+                        <img src="./images/arrow-gray-right.png"
+                             alt="arrow-gray-right"
+                        />
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="text-part">
+        <h1>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h1>
+        <div class="text">
+        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+        consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.
+        </div>
+    </div>
+    </div>
+
+    <div class="main-footer">
+        <p>Skup drugih elemenata na stranici</p>
+    </div>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="./dist/app.js" ></script>
+</body>
 </html>
