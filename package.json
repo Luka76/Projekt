@@ -8,7 +8,8 @@
   "devDependencies": {
     "@babel/cli": "^7.17.10",
     "@babel/core": "^7.17.10",
-    "@babel/preset-env": "^7.17.10"
+    "@babel/preset-env": "^7.17.10",
+    "babel-preset-minify": "^0.5.2"
   },
   "dependencies": {
     "sass": "^1.51.0"

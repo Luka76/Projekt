@@ -1,4 +1,4 @@
-$transition-duration: 0.2s;
+@import "/scss/mixins.scss";
 
 .main-header{
     margin: auto;
@@ -90,7 +90,7 @@ $transition-duration: 0.2s;
 .image-item {
     height: 12rem;
     border-radius: 0.25rem;
-    transition: all $transition-duration ease-out;
+    @include transition;
 }
 
 .image-item:not(:last-child) {

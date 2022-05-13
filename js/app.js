@@ -12,8 +12,7 @@ class Slider {
 
         this.#rightButton.on('click', this.next.bind(this))
         this.#leftButton.on('click', this.previous.bind(this))
-        // this.#rightButton.addEventListener('click', this.next.bind(this));
-        // this.#leftButton.addEventListener('click', this.previous.bind(this));
+        
     }
 
     previous() {
@@ -35,8 +34,6 @@ class Slider {
 
         const last = this.#lastImage();
         const duplicated = last.cloneNode(true);
-
-        console.log('next last', last)
 
         this.#removeElement(last)
         this.#insertElement(duplicated)
@@ -83,9 +80,7 @@ $(document).ready(function (){
         $('.slider')[0],
         $('#left-button'),
         $('#right-button')
-        // document.querySelectorAll('.slider')[0],
-        // document.getElementById('left-button'),
-        // document.getElementById('right-button')
+        
     );
 
 
@@ -93,10 +88,6 @@ $(document).ready(function (){
         $('.slider')[1],
         $('#left-button'),
         $('#right-button')
-
-        // document.querySelectorAll('.slider')[1],
-        // document.getElementById('left-button'),
-        // document.getElementById('right-button')
     );
-    console.log("ready!")
+    
 });

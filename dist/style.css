@@ -33,14 +33,11 @@ p{
 }
 
 .main-footer {
-  position: absolute;
-  margin: auto;
+  margin-top: 60px;
   height: 100px;
-  width: 940px;
   background-color: #DDDDDD;
   border-radius: 0px 0px 5px 5px;   
   display: flex;
-  align-items: flex-end;
 }
 
 .container {
@@ -76,7 +73,6 @@ p{
 }
 
 .gallery-part {
-  padding-top: 1rem;
   margin-left: -2000px;
 }
 
@@ -85,49 +81,67 @@ p{
   justify-content: flex-end;
 }
 
-.navigation-buttons {
-  display: flex;
-  padding-left: 2rem;
-  flex-direction: column;
-  
-  opacity: 0.3;
+.second-row > .slider{
+  margin-bottom: 0px;
 }
 
-.navigation-buttons > button {
-  border: 1px solid #134880;
+.navigation-buttons {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+}
+
+.navigation-buttons #left-button {
+  background: url("/images/arrow-gray-left.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #DDDDDD;
+  height: 60px;
+  width: 60px;
+  border-radius: 5px; 
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.navigation-buttons #right-button {
+  background: url("/images/arrow-gray-right.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #DDDDDD;
   height: 60px;
   width: 60px;
   border-radius: 5px;
-  outline: none;
-  background-color: white;
-  margin: 2px;
   cursor: pointer;
 }
 
-.navigation-buttons > button:hover {
-  opacity: 1;
-  border: 2px solid #134880;
+.navigation-buttons > #left-button:hover {
+  background-image: url("/images/arrow-blue-left.png");
+  border: 1px solid #134880;
+  border-radius: 5px;
+}
+
+.navigation-buttons > #right-button:hover {
+  background-image: url("/images/arrow-blue-right.png");
+  border: 1px solid #134880;
   border-radius: 5px;
 }
 
 .slider {
-  padding: 0.1rem;
+  margin-bottom: 10px;
   display: flex;
-  align-items: flex-end;
   justify-content: flex-end;
   flex-grow: 1;
-  margin: 5px;
 }
 
 .image-item {
   height: 200px;
   border-radius: 5px;
-  margin-left: 10px;
+  margin-left: 5px;
   transition: all 0.2s ease-out;
 }
 
 .image-item:not(:last-child) {
-  margin-right: 0.5rem;
+  margin-right: 5px;
 }
 
 .image-item:last-child {
