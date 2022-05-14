@@ -52,7 +52,7 @@ class Slider {
     }
 
     #insertElement(el, position = 'start') {
-        el.classList.add('fade-in');
+        $(el).addClass('fade-in');
 
         if (position === 'start') {
             this.#slider.prepend(el);
@@ -61,7 +61,7 @@ class Slider {
         }
 
         $(el).on('animationend', (e) => {
-            e.target.classList.remove('fade-in')
+            $(el).removeClass('fade-in');
         });
     }
 
@@ -70,7 +70,7 @@ class Slider {
             el.remove()
         });
 
-        el.classList.add('fade-out');
+        $(el).addClass('fade-out');
     }
 }
 

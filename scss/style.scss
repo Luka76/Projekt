@@ -1,4 +1,5 @@
 @import "/scss/mixins.scss";
+@import "./variables.scss";
 
 .main-header{
     margin: auto;
@@ -7,7 +8,7 @@
     color: azure;
     text-align: center;
     vertical-align: middle;
-    background-color: lightgray;
+    background-color: $backgroud-color;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     padding-top: 20px;
@@ -21,7 +22,7 @@
     color: azure;
     text-align: center;
     vertical-align: middle;
-    background-color: lightgray;
+    background-color: $backgroud-color;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
