@@ -1,30 +1,47 @@
 @import "/scss/mixins.scss";
 @import "./variables.scss";
 
-.main-header{
-    margin: auto;
-    height: 100px;
-    font-size: 10px;
-    color: azure;
-    text-align: center;
-    vertical-align: middle;
-    background-color: $backgroud-color;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding-top: 20px;
+.header {
+    margin-bottom: 60px;
 }
 
+#header1 {
+    width: 300px;
+    height: 100px;
+    float: left;
+    margin-right: 20px;
+
+}
+
+#header2 {
+    width: 600px;
+    height: 100px;
+    text-align: center;
+
+}
+
+.header-content {
+    background-color: #DDDDDD;
+    display: flex;
+    border-radius: 0px 0px 5px 5px;
+}
+
+p {
+    font-family: 'HelveticaNeue';
+    line-height: 18px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 15px;
+    align-self: center;
+    margin-left: 80px;
+}
 
 .main-footer {
-    margin: auto;
+    margin-top: 60px;
     height: 100px;
-    font-size: 10px;
-    color: azure;
-    text-align: center;
-    vertical-align: middle;
-    background-color: $backgroud-color;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    background-color: #DDDDDD;
+    border-radius: 0px 0px 5px 5px;
+    display: flex;
 }
 
 .container {
@@ -39,11 +56,28 @@
     column-gap: 1rem;
 }
 .text-part h1{
+    width: 300px;
+    height: 120px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
     color: #134880;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    letter-spacing: -0.2px;
+}
+
+.text {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.2px;
+    color: #484a4c;
 }
 
 .gallery-part {
-    padding-top: 1rem;
     margin-left: -2000px;
 }
 
@@ -54,10 +88,8 @@
 
 .navigation-buttons {
     display: flex;
-    padding-left: 2rem;
     flex-direction: column;
-    justify-content: flex-end;
-    opacity: 0.3;
+    margin-left: 100px;
 }
 
 .navigation-buttons > button {
@@ -80,22 +112,21 @@
 }
 
 .slider {
-    padding: 0.1rem;
+    margin-bottom: 10px;
     display: flex;
-    align-items: flex-end;
     justify-content: flex-end;
     flex-grow: 1;
-    margin: 5px;
 }
 
 .image-item {
-    height: 12rem;
-    border-radius: 0.25rem;
+    height: 200px;
+    border-radius: 5px;
+    margin-left: 5px;
     @include transition;
 }
 
 .image-item:not(:last-child) {
-    margin-right: 0.5rem;
+    margin-right: 5px;
 }
 
 .image-item:last-child {
