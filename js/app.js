@@ -8,15 +8,12 @@ $(document).ready(function (){
     const slider1 = new Slider(
         $(jqFirstSlider),
         $('#left-button'),
-        $('#right-button')
-        
+        $('#right-button')  
     );
-
 
     const slider2 = new Slider(
         $(jqSecondSlider),
         $('#left-button'),
         $('#right-button')
-    );
-    
+    ); 
 });
