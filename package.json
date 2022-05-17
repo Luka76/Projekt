@@ -2,6 +2,7 @@
   "name": "Projekt",
   "version": "1.0.0",
   "scripts": {
+    "start": "babel js --out-dir dist",
     "build": "babel js -d dist",
     "gen-css": "sass scss/style.scss dist/style.css"
   },

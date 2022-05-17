@@ -1,5 +1,5 @@
 'use strict';
-import {Slider} from './exportedClass'
+import { Slider } from "./exportedClass";
 
 const jqFirstSlider = $('.slider')[0];
 const jqSecondSlider = $('.slider')[1];

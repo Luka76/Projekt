@@ -71,3 +71,4 @@ export class Slider {
         $(el).addClass('fade-out');
     }
 }
+
